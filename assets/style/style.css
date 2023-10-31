@@ -10,7 +10,7 @@ main{
 }
 .card{
     box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.555);
-    width: 25%;
+    width: 35%;
 }
 .div_input{
     height: 60px;
@@ -27,6 +27,9 @@ main{
         border-radius: 100%;
     }
 }
+.detalhes{
+    justify-content: space-around;
+}
 .erro{
     scale: 0;
     transition: 1.5s ease-in-out;
@@ -40,6 +43,7 @@ main{
 .achado{
     scale: 0;
     transition: 1.5s ease-in-out;
+    height: 100%;
 }
 .clima-info{
     padding-bottom: 30px;
@@ -53,10 +57,20 @@ header{
     align-items: center;
     height: 10vh;
     background-color: #004df3cc;
-
 }
 h1{
     font-size: 5em !important;
     color: rgb(255, 208, 0) !important;
     text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.452);
+}
+
+/* Responsivo */
+
+@media(max-width: 1100px){
+    .card{
+        width: 80%;
+    }
+    h1{
+        font-size: 2em !important;
+    }
 }

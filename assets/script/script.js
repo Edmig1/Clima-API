@@ -66,6 +66,10 @@ function busca() {
                     img.src = 'assets/img/snow.png'
                     desc.innerHTML='Neve'
                     break
+                case 'Haze':
+                    img.src = 'assets/img/haze.png'
+                    desc.innerHTML='Nevoeiro'
+                    break
             }
         }
 

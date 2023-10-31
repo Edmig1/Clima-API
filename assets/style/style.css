@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+main{
+    height: 90vh;
+    background-color: #004df3cc;
+}
+.card{
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.555);
+    width: 25%;
+}
+.div_input{
+    height: 60px;
+    .gps,.lupa{
+        font-size: 2em;
+    }
+    .local{
+        outline: none;
+        font-size: 1.4em;
+    }
+    .button{
+        background-color: rgba(7, 201, 201, 0.24);
+        padding: 10px;
+        border-radius: 100%;
+    }
+}
+.erro{
+    scale: 0;
+    transition: 1.5s ease-in-out;
+}
+.clima{
+    transition: 1.5s ease-in-out;
+    height: 00px;
+    width: 100%;
+    scale: 0;
+}
+.achado{
+    scale: 0;
+    transition: 1.5s ease-in-out;
+}
+.clima-info{
+    padding-bottom: 30px;
+}
+.img_erro{
+    width: 65%;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: #004df3cc;
+
+}
+h1{
+    font-size: 5em !important;
+    color: rgb(255, 208, 0) !important;
+    text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.452);
+    tex
+}

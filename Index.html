@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7f62cd2861.js" crossorigin="anonymous"></script>
+    <title>Weather Wonders</title>
+</head>
+<body>
+    <header>
+        <h1>Weather Wonders</h1>
+    </header>
+    <main class="container-fluid d-flex flex-column justify-content-center align-items-center">
+        <div class="card">
+            <div class="div_input d-flex justify-content-center align-items-center">
+                <i class="fa-solid fa-location-dot gps" style="color: #00276b;"></i>
+                <input class="local w-75 mx-2 border-0" type="text" placeholder="Digite Sua Localização Aqui..." required>
+                <button onclick="busca()" class=" border-0 button"><i class="fa-solid fa-magnifying-glass lupa" style="color: #00276b;"></i></button>
+            </div>
+            <div class="clima d-flex justify-content-center align-items-center">
+                <div class="resultado w-100 justify-content-center align-items-center">
+                    <div class="erro w-100 text-center justify-content-center align-items-center">
+                        <img class="img_erro" src="assets/img/World-amico.svg" alt="">
+                        <p class="falha">Não Foi Possível Encontrar o Local</p>
+                    </div>
+                    <div class="achado w-100 justify-content-center align-items-center text-center">
+                        <div class="clima-info">
+                            <img src="" alt="">
+                            <h2 class="temperatura"></h2>
+                            <p class="descricao"></p>
+                        </div>
+                        <div class="detalhes d-flex justify-content-between align-self-end w-100">
+                            <div class="humidade d-flex justify-content-between gap-2 mx-5">
+                                <p><span><i style="scale: 1.6; margin-right: 10px;" class="fa-solid fa-water"></i></span></p>
+                                <p class="p-humidade"></p>
+                            </div>
+                            <div class="vento d-flex justify-content-between gap-2 mx-5">
+                                <p class="p-vento"></p>
+                                <p><span><i style="scale: 1.6; margin-right: 6px;" class="fa-solid fa-wind"></i></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="assets/script/script.js"></script>
+</body>
+</html>

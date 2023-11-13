@@ -26,8 +26,10 @@ function busca() {
             achado.style.height = '0px'
             achado.style.width = '0px'
             clima.style.height = '60vh'
-            clima.style.scale = '1'
-            erro.style.scale = '1'
+            setTimeout(function(){
+                clima.style.scale = '1'
+                erro.style.scale = '1'
+            },300)
 
         }
 
@@ -38,8 +40,10 @@ function busca() {
             erro.style.width = '0px'
             erro.style.scale = '0'
             clima.style.height = '60vh'
-            clima.style.scale = '1'
-            achado.style.scale = '1'
+            setTimeout(function(){
+                clima.style.scale = '1'
+                achado.style.scale = '1'
+            },300)
             vento.innerHTML = json.wind.speed + ' Km/h'
             humidade.innerHTML = json.main.humidity + '%'
             temp.innerHTML = json.main.temp + 'C°'

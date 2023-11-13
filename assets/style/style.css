@@ -32,17 +32,17 @@ main{
 }
 .erro{
     scale: 0;
-    transition: 1.5s ease-in-out;
+    transition: 0.8s ease-in-out;
 }
 .clima{
-    transition: 1.5s ease-in-out;
+    transition: 0.8s ease-in-out;
     height: 00px;
     width: 100%;
     scale: 0;
 }
 .achado{
     scale: 0;
-    transition: 1.5s ease-in-out;
+    transition: 0.8s ease-in-out;
     height: 100%;
 }
 .clima-info{
